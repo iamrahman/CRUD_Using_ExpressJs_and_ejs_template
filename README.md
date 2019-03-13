@@ -16,6 +16,8 @@ A. Following are the npm packages used in this project. First install all the pa
 ```
 
 B. Connect Mongo Database.
+
    Database Name : node-demo,
+   
    Collection Name : users,
 
