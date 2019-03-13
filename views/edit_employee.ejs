@@ -1,0 +1,32 @@
+<%- include include.ejs %>
+<br>
+<div class="row">
+    <form class="col s8 offset-s2" method="POST" action="/save_employee_details/<%= docs._id %>">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" name="first_name" value="<%= docs.first_name %>" type="text" class="validate" required>
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input name="last_name" type="text" class="validate" value="<%= docs.last_name %>" required>
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input name="mobile" type="number" class="validate" value="<%= docs.mobile %>" required>
+          <label for="mobile">Mobile</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input name="email" type="email" class="validate" value="<%= docs.email %>" required>
+          <label for="email">Email</label>
+        </div>
+      </div>
+        <button class="btn waves-effect waves-light" type="submit">Save
+        </button>
+    </form>
+  </div>
+</body>
+</html>
