@@ -10,7 +10,7 @@
       <p> <%= data.email %> </p><br>
       <p> <%= data.mobile %> </p>
       <a href="edit_employee/<%= data._id %>"><i class="material-icons">Edit</i></a>
-      <a href="delete_employee/<%= data._id %>"><i class="material-icons">Delete</i></a>
+      <a href="delete_employee/<%= data._id %>" style="color:red;"><i class="material-icons">Delete</i></a>
     </li>
   <% }); %>
   </ul>
